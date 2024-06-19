@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Slikscreen';
-    src: url(./Silkscreen-Regular.ttf);
+    src: url(../fonts/Silkscreen-Regular.ttf);
 }
 
 :root{
@@ -25,7 +25,7 @@ body{
 #header {
     padding: 1px 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.212);
 }
@@ -37,7 +37,7 @@ body{
 
 .logo-container{
     display: flex;
-    width: 100px;
+    width: min-content;
 }
 
 .logo-container img{
@@ -46,18 +46,13 @@ body{
     margin-right: 10px;
 }
 
-#header .contact a{
-    color: var(--color-yellow);
-    font-size: 1.5rem;
-}
-
 #main{
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: stretch;
-    padding: 40px;
+    padding: 15px;
 }
 
 #main .nav-container{
@@ -76,7 +71,17 @@ nav{
 
 .btn{
     border: none;
-    background-color: rgba(0, 0, 0, 0.226);
+    background-color: transparent;
     width: 130px;
     height: 40px;
+    font-size: 1.4rem;
+    color: var(--color-yellow);
+    border-bottom: 3px solid transparent;
+    transition: 0s;
+}
+
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.11);
+    border-bottom: 3px solid var(--color-yellow);
+    transition: 0.2s;
 }

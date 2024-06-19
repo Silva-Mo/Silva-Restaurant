@@ -1,6 +1,6 @@
-import './normalize.css';
-import './styles.css';
-import logo from './restaurant-outline-svgrepo-com.svg'
+import '../css/normalize.css';
+import '../css/styles.css';
+import logo from '../imgs/restaurant-outline-svgrepo-com.svg'
 
 const logoContainer = document.querySelector('.logo-container');
 const imgLogo = new Image();
