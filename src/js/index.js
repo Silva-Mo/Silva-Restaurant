@@ -37,11 +37,13 @@ function appendChildren(moduleElements){
 btns.forEach((btn) => {
     if (btn.classList.contains('1')){
         btn.addEventListener('click', () => {
+            content.style = "flex-direction: row"; 
             appendChildren(homeElements);
         })
     }
     else if (btn.classList.contains('2')){
         btn.addEventListener('click', () => {
+            content.style = "flex-direction: column"; 
             appendChildren(menuElements);
         })
     }

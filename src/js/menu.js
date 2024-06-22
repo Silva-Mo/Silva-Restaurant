@@ -1,4 +1,5 @@
-import burgerImg from '../imgs/burger.png'
+import burgerImg from '../imgs/burger.png';
+import cheesecakeImg from '../imgs/cheesecake.png';
 
 function createDish (name, price, description, img){
     return {
@@ -10,6 +11,7 @@ function createDish (name, price, description, img){
 }
 
 const burger = createDish("burger", "1299$", "Our top-tier burger, it's delicious, fancy and healthy too", burgerImg);
+const cheesecake = createDish("cheesecake", "799$", "Not any cheesecake, it will make you either happy :) or sad :( depends on your financial status", cheesecakeImg)
 
 function createMenuDish (dish){
     const dishConatiner = document.createElement('div');
@@ -40,7 +42,8 @@ function createMenuDish (dish){
 }
 
 const burgerDiv = createMenuDish(burger);
+const cheesecakeDiv = createMenuDish(cheesecake);
 
-const arrayOfElemnts = [burgerDiv];
+const arrayOfElemnts = [burgerDiv, cheesecakeDiv];
 
 export default arrayOfElemnts;
