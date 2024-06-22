@@ -6,6 +6,7 @@
 :root{
     --color-yellow: rgb(255, 230, 0);
     --color-white: white;
+    --color-red: rgb(255, 8, 0);
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-family: 'Slikscreen';
 }
@@ -86,11 +87,44 @@ nav{
     transition: 0.2s;
 }
 
+.content-container {
+    width: 70%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .content{
-    width: 80%;
-    min-height: 500px;
+    display: flex;
+    padding: 30px;
     margin-top: 20px;
     background-color: rgba(0, 0, 0, 0.267);
-    display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row;
+    color: var(--color-white);
+}
+
+.content img {
+    height: 300px;
+}
+
+
+.txtContainer h2 {
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+    margin-top: 0;
+    color: var(--color-yellow);
+}
+
+.txtContainer p {
+    font-size: 1.2rem;
+}
+
+.txtContainer h3 {
+    font-size: 1.4rem;
+    color: var(--color-red);
+    margin-bottom: 0;
 }

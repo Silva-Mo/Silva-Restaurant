@@ -12,6 +12,8 @@ const btns = document.querySelectorAll('.btn');
 imgLogo.src = logo;
 logoContainer.insertBefore(imgLogo, txtLogo);
 
+appendChildren(homeElements);
+
 function removeContent(){
     let allChildNodes = content.childNodes;
     allChildNodes.forEach((child) => {
@@ -22,8 +24,8 @@ function removeContent(){
 function appendChildren(moduleElements){
     removeContent();
     console.log(moduleElements);
-    moduleElements.forEach((elemnt) => {
-        content.appendChild(elemnt);
+    moduleElements.forEach((element) => {
+        content.appendChild(element);
     })
 }
 
@@ -32,6 +34,11 @@ btns.forEach((btn) => {
         btn.addEventListener('click', () => {
             appendChildren(homeElements);
         })
+    }
+    else if (btn.classList.contains('2')){
+        // btn.addEventListener('click', () => {
+        //     appendChildren()
+        // })
     }
 })
 

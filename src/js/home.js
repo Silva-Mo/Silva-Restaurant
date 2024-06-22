@@ -1,12 +1,23 @@
+import aboutImg from '../imgs/about.png';
+
+const txtContainer = document.createElement('div');
 const h2 = document.createElement('h2');
 const paraOfintro = document.createElement('p');
 const enjoyTxt = document.createElement('h3');
 
 h2.textContent = "Who we are:";
-paraOfintro.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ullamcorper, orci eget efficitur placerat, dui magna congue nulla, eu consectetur felis diam et diam. Vivamus id scelerisque elit. Donec ac condimentum nisl. In scelerisque imperdiet metus, eu pulvinar metus varius ac. Integer accumsan libero nec metus fermentum posuere. Nullam molestie lectus vitae mi condimentum, ultrices dictum leo eleifend. Donec felis eros, vestibulum gravida aliquam at, vehicula nec diam. Nunc bibendum, massa et faucibus lobortis, justo urna aliquam ligula, non semper mauris elit venenatis erat.";
+paraOfintro.textContent = "Silva's Restaurant is your ultimate choice when you are hungry, or even angry. We offer high-quality food with the best and lowest (this is not a lie actually) prices in the market, and you should believe it. Any complaints about our prices will never be on consideration becuase we believe that the customer is always wrong and greedy, be generous and BUY OUR FOOD RIGHT NOW YOU $#@%!";
 enjoyTxt.textContent= "Enjoy our dishes :)";
+txtContainer.classList.add('txtContainer');
 
-const arrayOfElemnts = [h2,paraOfintro,enjoyTxt];
+txtContainer.appendChild(h2);
+txtContainer.appendChild(paraOfintro);
+txtContainer.appendChild(enjoyTxt);
+
+const aboutImageElement = new Image();
+aboutImageElement.src = aboutImg;
+
+const arrayOfElemnts = [txtContainer, aboutImageElement];
 
 export default arrayOfElemnts;
 
