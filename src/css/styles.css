@@ -6,7 +6,7 @@
 :root{
     --color-yellow: rgb(255, 230, 0);
     --color-white: white;
-    --color-red: rgb(255, 8, 0);
+    --color-red: rgb(255, 16, 0);
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-family: 'Slikscreen';
 }
@@ -96,6 +96,7 @@ nav{
 }
 
 .content{
+    width: 100%;
     display: flex;
     padding: 30px;
     margin-top: 20px;
@@ -105,7 +106,10 @@ nav{
     gap: 15px;
     flex-direction: row;
     color: var(--color-white);
+    justify-content: center;
 }
+
+
 
 .content img {
     height: 300px;
@@ -127,4 +131,30 @@ nav{
     font-size: 1.4rem;
     color: var(--color-red);
     margin-bottom: 0;
+}
+
+.menu-element{
+    width: 70%;
+    border-bottom: 2px solid var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-element h2 {
+    color: var(--color-yellow);
+}
+
+.menu-element p {
+    margin-bottom: 0;
+}
+
+.menu-element .price{
+    color: var(--color-red);
+    font-size: 1.8rem;
+}
+
+.menu-element img {
+    width: 200px;
+    height: 180px;
 }

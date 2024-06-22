@@ -2,6 +2,7 @@ import '../css/normalize.css';
 import '../css/styles.css';
 import logo from '../imgs/restaurant-outline-svgrepo-com.svg'
 import homeElements from './home';
+import menuElements from './menu'
 
 const logoContainer = document.querySelector('.logo-container');
 const imgLogo = new Image();
@@ -15,10 +16,14 @@ logoContainer.insertBefore(imgLogo, txtLogo);
 appendChildren(homeElements);
 
 function removeContent(){
-    let allChildNodes = content.childNodes;
-    allChildNodes.forEach((child) => {
-        content.removeChild(child);
-    })
+    if  (content.firstChild === null){
+        return;
+    }
+    content.firstChild.remove();
+    if (content.childNodes.length === "0"){
+        return;
+    } 
+    removeContent();
 }
 
 function appendChildren(moduleElements){
@@ -36,9 +41,9 @@ btns.forEach((btn) => {
         })
     }
     else if (btn.classList.contains('2')){
-        // btn.addEventListener('click', () => {
-        //     appendChildren()
-        // })
+        btn.addEventListener('click', () => {
+            appendChildren(menuElements);
+        })
     }
 })
 
