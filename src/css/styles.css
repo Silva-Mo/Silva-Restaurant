@@ -95,6 +95,11 @@ nav{
     align-items: center;
 }
 
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
 .content{
     width: 100%;
     display: flex;
@@ -109,7 +114,9 @@ nav{
     justify-content: center;
 }
 
-
+.content.animate {
+    animation: fadeIn 0.4s;
+}
 
 .content img {
     height: 300px;
@@ -134,7 +141,7 @@ nav{
 }
 
 .menu-element{
-    width: 70%;
+    width: 80%;
     border-bottom: 2px solid var(--color-white);
     display: flex;
     justify-content: space-between;
@@ -145,16 +152,13 @@ nav{
     color: var(--color-yellow);
 }
 
-.menu-element p {
-    margin-bottom: 0;
-}
-
-.menu-element .price{
+.menu-element .price{ 
+    margin-top: 2px;
     color: var(--color-red);
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
 .menu-element img {
-    width: 200px;
-    height: 180px;
+    width: 190px;
+    height: 160px;
 }

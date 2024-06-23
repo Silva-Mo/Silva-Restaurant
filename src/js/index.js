@@ -36,16 +36,23 @@ function appendChildren(moduleElements){
 
 btns.forEach((btn) => {
     if (btn.classList.contains('1')){
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', () => {     
+            content.classList.add('animate');     
             content.style = "flex-direction: row"; 
             appendChildren(homeElements);
         })
     }
     else if (btn.classList.contains('2')){
         btn.addEventListener('click', () => {
+            content.classList.add('animate');
             content.style = "flex-direction: column"; 
             appendChildren(menuElements);
         })
     }
 })
 
+content.addEventListener("animationend", (e) => {
+    if (content.classList.contains('animate') === true){
+        e.target.classList.remove('animate');
+    }
+})
