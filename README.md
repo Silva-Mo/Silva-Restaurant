@@ -7,9 +7,9 @@
 [LIVE DEMO](https://silva-mo.github.io/Silva-Restaurant/)
 
 ## About
-That is my third TOP JS project. It requires a good understanding of JS modules and Webpack skills
+This was my third TOP JS project. It requires a good understanding of JS modules and Webpack skills
 
-Alhamdulillah
+**Alhamdulillah**
 
 ## What was needed to complete it:
 - Understanding how Webpack works
