@@ -11,9 +11,9 @@ function createDish (name, price, description, img){
     }
 }
 
-const burger = createDish("burger", "1299$", "Our top-tier burger, it's delicious, fancy and healthy too", burgerImg);
-const cheesecake = createDish("cheesecake", "799$", "Not any cheesecake, it will make you either happy :) or sad :( depends on your financial status", cheesecakeImg)
-const latte = createDish("latte", "599$", "for that price, it's not just a drink, it's an investment in your caffeine addiction", latteImg)
+const burger = createDish("burger", "1299$", "Our top-tier burger, it's delicious, fancy, healthy, and expensive too! Time to cry over your receipt", burgerImg);
+const cheesecake = createDish("cheesecake", "799$", "Not any cheesecake, it will make you either happy :) or sad :( depending on your bank balance", cheesecakeImg)
+const latte = createDish("latte", "599$", "at that price, it's not just a drink, it's an investment in your caffeine addiction", latteImg)
 
 function createMenuDish (dish){
     const dishConatiner = document.createElement('div');

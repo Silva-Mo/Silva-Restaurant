@@ -6,7 +6,7 @@ const paraOfintro = document.createElement('p');
 const enjoyTxt = document.createElement('h3');
 
 h2.textContent = "Who we are:";
-paraOfintro.textContent = "Silva's Restaurant is your ultimate choice when you are hungry, or even angry. We offer high-quality food with the best and lowest prices in the market (this is not a lie actually) , and you SHOULD BEILVE IT. Any complaints about our prices will never be taken into consideration as we deeply believe that the customer is always wrong and greedy. be generous and BUY OUR FOOD RIGHT NOW YOU $#@%!";
+paraOfintro.textContent = "Silva's Restaurant is your ultimate choice when you are hungry, or even angry. We offer high-quality food with the best and lowest prices in the market (this is not a lie actually), BELIEVE US! Any complaints about our prices will never be taken into consideration as we deeply believe that the customer is always wrong and greedy. be generous and BUY OUR FOOD RIGHT NOW YOU $#@%!";
 enjoyTxt.textContent= "Enjoy our dishes :)";
 txtContainer.classList.add('txtContainer');
 

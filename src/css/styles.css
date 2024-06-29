@@ -162,3 +162,42 @@ nav{
     width: 190px;
     height: 160px;
 }
+
+.menu-element:last-child {
+    border-bottom: 2px solid transparent;
+}
+
+.contact-txt {
+    color: var(--color-white);
+    min-width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contact-txt h1{
+    color: var(--color-yellow);
+    margin-bottom: 10px;
+}
+
+.contact-txt h2{
+    margin-bottom: 5px;
+}
+
+.imgs-container {
+    display: flex;
+    min-width: 70%;
+    justify-content: space-between;
+}
+
+.imgs-container img{
+    width: 250px;
+    height: 250px;
+}
+
+.imgs-container iframe{
+    width: 250px;
+    height: 250px;
+    border: none;
+}

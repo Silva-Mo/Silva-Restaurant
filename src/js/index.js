@@ -2,7 +2,8 @@ import '../css/normalize.css';
 import '../css/styles.css';
 import logo from '../imgs/restaurant-outline-svgrepo-com.svg'
 import homeElements from './home';
-import menuElements from './menu'
+import menuElements from './menu';
+import contactElemnts from './contact';
 
 const logoContainer = document.querySelector('.logo-container');
 const imgLogo = new Image();
@@ -47,6 +48,13 @@ btns.forEach((btn) => {
             content.classList.add('animate');
             content.style = "flex-direction: column"; 
             appendChildren(menuElements);
+        })
+    }
+    else if (btn.classList.contains('3')){
+        btn.addEventListener('click', () => {
+            content.classList.add('animate');
+            content.style = "flex-direction: column"; 
+            appendChildren(contactElemnts);
         })
     }
 })
