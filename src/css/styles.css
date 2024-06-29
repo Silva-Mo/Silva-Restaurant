@@ -201,3 +201,63 @@ nav{
     height: 250px;
     border: none;
 }
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.github-container{
+    align-items: center;
+    color: white;
+    font-size: 1.8rem;
+    padding-bottom: 4px;
+    display: flex;
+    width: 200px;
+}
+
+
+.github-container h1{
+    margin: 0;
+}
+
+.github-container {
+    align-items: center;
+    gap: 10px;
+    color: rgb(36, 36, 36);
+    font-size: 1.2rem;
+    transition: 0.4s;
+}
+
+.github-container div{
+    transition: 0.4s;
+    margin-bottom: 5px;
+}
+
+.github-container img {
+    height: 35px;
+    width: 35px;
+    transition: 0.4s;
+}
+
+.github-container:hover img{
+    transform: rotate(360deg);
+}
+
+.github-container:hover div{
+    transform: scale(1.1);
+    text-decoration: underline;
+    color: white;
+}
+
+.github-container div a:visited{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.github-container div a:link{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}

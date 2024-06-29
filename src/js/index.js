@@ -1,18 +1,35 @@
 import '../css/normalize.css';
 import '../css/styles.css';
-import logo from '../imgs/restaurant-outline-svgrepo-com.svg'
+import logo from '../imgs/restaurant-outline-svgrepo-com.svg';
+import github from '../imgs/github-mark.svg';
 import homeElements from './home';
 import menuElements from './menu';
 import contactElemnts from './contact';
 
 const logoContainer = document.querySelector('.logo-container');
-const imgLogo = new Image();
-const txtLogo = document.querySelector('.logo-container h1')
+const txtLogo = document.querySelector('.logo-container h1');
 const content = document.querySelector('.content');
 const btns = document.querySelectorAll('.btn');
+const footerGithubLinkContainer = document.querySelector('#footer .github-container');
 
+const imgLogo = new Image();
+const githubLogo = new Image();
+const logoImgContainerLink = document.createElement('a');
+const logoTxtLink = document.createElement('a');
+const logoTxtContainerLink = document.createElement('div');
+
+logoImgContainerLink.setAttribute('href', 'https://github.com/Silva-Mo/Silva-Restaurant');
+logoTxtLink.setAttribute('href', 'https://github.com/Silva-Mo/Silva-Restaurant');
 imgLogo.src = logo;
+githubLogo.src = github;
+
+logoTxtLink.textContent = "Silva-Mo"
 logoContainer.insertBefore(imgLogo, txtLogo);
+logoImgContainerLink.appendChild(githubLogo);
+logoTxtContainerLink.appendChild(logoTxtLink);
+
+footerGithubLinkContainer.appendChild(logoImgContainerLink);
+footerGithubLinkContainer.appendChild(logoTxtContainerLink);
 
 appendChildren(homeElements);
 
