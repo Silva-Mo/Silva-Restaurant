@@ -12,8 +12,8 @@ function createDish (name, price, description, img){
 }
 
 const burger = createDish("burger", "1299$", "Our top-tier burger, it's delicious, fancy, healthy, and expensive too! Time to cry over your receipt", burgerImg);
-const cheesecake = createDish("cheesecake", "799$", "Not any cheesecake, it will make you either happy :) or sad :( depending on your bank balance", cheesecakeImg)
-const latte = createDish("latte", "599$", "at that price, it's not just a drink, it's an investment in your caffeine addiction", latteImg)
+const cheesecake = createDish("cheesecake", "799$", "Not any cheesecake, it will make you either happy :) or sad :( depending on your bank balance", cheesecakeImg);
+const latte = createDish("latte", "599$", "at that price, it's not just a drink, it's an investment in your caffeine addiction", latteImg);
 
 function createMenuDish (dish){
     const dishConatiner = document.createElement('div');
@@ -25,7 +25,7 @@ function createMenuDish (dish){
 
     imgOfDish.src = dish.img;
 
-    dishName.textContent = "Silva's" + " " + dish.name.charAt(0).toUpperCase() + dish.name.slice(1);;
+    dishName.textContent = "Silva's" + " " + dish.name.charAt(0).toUpperCase() + dish.name.slice(1);
     dishDescription.textContent = dish.description;
     dishPrice.textContent = dish.price;
 
