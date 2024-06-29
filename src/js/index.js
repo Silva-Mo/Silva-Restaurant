@@ -6,22 +6,28 @@ import homeElements from './home';
 import menuElements from './menu';
 import contactElemnts from './contact';
 
+const head = document.querySelector('head');
 const logoContainer = document.querySelector('.logo-container');
 const txtLogo = document.querySelector('.logo-container h1');
 const content = document.querySelector('.content');
 const btns = document.querySelectorAll('.btn');
 const footerGithubLinkContainer = document.querySelector('#footer .github-container');
 
+const iconImage = document.createElement('link');
 const imgLogo = new Image();
 const githubLogo = new Image();
 const logoImgContainerLink = document.createElement('a');
 const logoTxtLink = document.createElement('a');
 const logoTxtContainerLink = document.createElement('div');
 
+iconImage.setAttribute('rel', 'icon');
+iconImage.setAttribute('href', logo);
 logoImgContainerLink.setAttribute('href', 'https://github.com/Silva-Mo/Silva-Restaurant');
 logoTxtLink.setAttribute('href', 'https://github.com/Silva-Mo/Silva-Restaurant');
 imgLogo.src = logo;
 githubLogo.src = github;
+
+head.appendChild(iconImage);
 
 logoTxtLink.textContent = "Silva-Mo"
 logoContainer.insertBefore(imgLogo, txtLogo);

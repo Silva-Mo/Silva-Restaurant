@@ -170,6 +170,7 @@ nav{
 .contact-txt {
     color: var(--color-white);
     min-width: 70%;
+    max-width: 710px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -188,7 +189,9 @@ nav{
 .imgs-container {
     display: flex;
     min-width: 70%;
+    max-width: 710px;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .imgs-container img{
@@ -229,6 +232,7 @@ nav{
     color: rgb(36, 36, 36);
     font-size: 1.2rem;
     transition: 0.4s;
+    justify-content: center;
 }
 
 .github-container div{
@@ -260,4 +264,55 @@ nav{
 .github-container div a:link{
     color: rgb(255, 255, 255);
     text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px){
+    :root{
+        font-size: 14px;
+    }
+    
+    .imgs-container img{
+        width: 200px;
+        height: 200px;
+    }
+    .imgs-container iframe{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 680px){
+    :root{
+        font-size: 12px;
+    }
+    .menu-element{
+        flex-direction: column-reverse;
+    }
+
+    .menu-element div{
+        text-align: center;
+    }
+
+    .menu-element img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .imgs-container{
+        flex-direction: column;
+    }
+
+    .content > img{
+        display: none;
+    }
+
+    .logo-container img {
+        width: 60px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    :root{
+        font-size: 10px;
+    }
 }
